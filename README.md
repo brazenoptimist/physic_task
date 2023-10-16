@@ -1,9 +1,8 @@
-# Решите задачу Коши для уравнения на Python
+# Задача Коши
 
 ## Уравнение
 
-
-$$ \frac{d^2u(x,t)}{dt^2} = \frac{d^2u(x,t)}{dx^2} - \sin(u(x,t)) $$
+$$ \frac{\partial^2u(x,t)}{\partial t^2} = \frac{\partial^2u(x,t)}{\partial x^2} - \sin(u(x,t)) $$
 
 на решетке от 0 до 10 с шагом $dx = 0.005$
 
@@ -17,6 +16,21 @@ $$ \frac{d^2u(x,t)}{dt^2} = \frac{d^2u(x,t)}{dx^2} - \sin(u(x,t)) $$
 
 - Постройте картину движения пакета.
 
-## Решение
 
+## Зависимости
+
+Для запуска кода вам потребуется Python с библиотеками NumPy и Matplotlib. Вы можете установить их с помощью следующих команд:
+
+```bash
+git clone https://github.com/brazenoptimist/physic_task.git
+cd physic_task
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python task.py
+```
+
+## Результат
+
+![result](gifs/wave_packet.gif)
 
